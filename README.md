@@ -1,16 +1,31 @@
 # Docker Images for Julia with JupyterLab
 
-## Images
-
-`statisticalmice/julia-jupyter:1.5-buster`
-`statisticalmice/julia-jupyter:latest`
-
-`statisticalmice/julia-jupyter:1.6-buster`
-Please note that Julia 1.6 is not yet released.
-
 Dockerhub [statisticalmice/julia-jupyter](https://hub.docker.com/repository/docker/statisticalmice/julia-jupyter)
 
 GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice/julia-jupyter-docker)
+
+## Images
+
+### Layers
+
+1. The original Julia images are built on debian:buster-slim
+2. These images are built on julia:1.5-buster or julia:1.6-buster
+3. Install wget
+4. Create user 'arthur'
+5. Install Miniconda3
+6. Install jupyterlab from conda-forge
+7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
+
+### Julia 1.5
+
+`statisticalmice/julia-jupyter:1.5-buster`
+
+`statisticalmice/julia-jupyter:latest`
+
+### Julia 1.6
+
+`statisticalmice/julia-jupyter:1.6-buster`
+Please note that Julia 1.6 is not yet released.
 
 ## Base Images
 
@@ -23,8 +38,10 @@ Julia [language](https://julialang.org)
 ## Jupyter Docker Stacks
 
 You can find the Docker images built by the Jupyter project using the following link. The `jupyter/datascience-notebook` contains Julia.
+
 These
-* have more features.
-* are much larger.
+* have more features
+* are much larger
+* are based on Ubuntu
 
 Jupyter Docker Stacks [documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
