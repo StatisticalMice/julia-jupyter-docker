@@ -6,16 +6,6 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 
 ## Images
 
-### Layers
-
-1. The original Julia images are built on debian:buster-slim
-2. These images are built on julia:1.5-buster or julia:1.6-buster
-3. Install wget
-4. Create user 'arthur'
-5. Install Miniconda3
-6. Install jupyterlab from conda-forge
-7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
-
 ### Julia 1.5
 
 `statisticalmice/julia-jupyter:1.5-buster`
@@ -26,6 +16,16 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 
 `statisticalmice/julia-jupyter:1.6-buster`
 Please note that Julia 1.6 is not yet released.
+
+### Layers
+
+1. The original Julia images are built on debian:buster-slim
+2. These images are built on julia:1.5-buster or julia:1.6-buster
+3. Install wget
+4. Create user 'arthur'
+5. Install Miniconda3
+6. Install jupyterlab from conda-forge
+7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
 
 ## Base Images
 
