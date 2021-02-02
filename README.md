@@ -19,3 +19,12 @@ Julia [Docker official images](https://hub.docker.com/_/julia)
 Julia [language](https://julialang.org)
 
 [![GitHub Super-Linter](https://github.com/StatisticalMice/julia-jupyter-docker/workflows/Super-Linter/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
+## Jupyter Docker Stacks
+
+You can find the Docker images built by the Jupyter project using the following link. The `jupyter/datascience-notebook` contains Julia.
+These
+* have more features.
+* are much larger.
+
+Jupyter Docker Stacks [documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
