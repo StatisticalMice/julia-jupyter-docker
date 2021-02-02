@@ -2,8 +2,9 @@ FROM julia:1.5-buster
 
 USER root
 RUN useradd -ms /bin/bash arthur
-RUN apt-get update
-RUN apt-get install -y wget && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y wget && \
+    rm -rf /var/lib/apt/lists/*
 
 USER arthur
 WORKDIR /home/arthur
@@ -16,4 +17,6 @@ RUN wget \
     && rm -f Miniconda3-latest-Linux-x86_64.sh 
 RUN conda install -y jupyterlab
 
-CMD ["julia"]
+RUN julia -e "using Pkg; Pkg.add(\"IJulia\"); Pkg.precompile();"
+
+CMD ["jupyter", "lab", "--ip", "0.0.0.0", "--port", "8888"]
