@@ -3,6 +3,7 @@
 ## Images
 
 `statisticalmice/julia-jupyter:1.5-buster`
+`statisticalmice/julia-jupyter:latest`
 
 `statisticalmice/julia-jupyter:1.6-buster`
 Please note that Julia 1.6 is not yet released.
