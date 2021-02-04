@@ -1,15 +1,13 @@
 # Docker Images for Julia with JupyterLab
 
-Dockerhub [statisticalmice/julia-jupyter](https://hub.docker.com/repository/docker/statisticalmice/julia-jupyter)
-
+Dockerhub [statisticalmice/julia-jupyter](https://hub.docker.com/repository/docker/statisticalmice/julia-jupyter)  
 GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice/julia-jupyter-docker)
 
 ## Images
 
 ### Julia 1.5
 
-`statisticalmice/julia-jupyter:1.5-buster`
-
+`statisticalmice/julia-jupyter:1.5-buster`  
 `statisticalmice/julia-jupyter:latest`
 
 ### Julia 1.6
@@ -26,17 +24,16 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 6. Install jupyterlab from conda-forge
 7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
 
-Versions on 4 Feb 2021:
-Julia       1.5.3 / 1.6.0-beta1
-Python      3.8.5
-jupyter lab 3.0.7
-conda       4.9.2
-Debian      10.7
+Versions on 4 Feb 2021:  
+Julia       1.5.3 / 1.6.0-beta1  
+Python      3.8.5  
+jupyter lab 3.0.7  
+conda       4.9.2  
+Debian      10.7  
 
 ## Base Images
 
-Julia [Docker official images](https://hub.docker.com/_/julia)
-
+Julia [Docker official images](https://hub.docker.com/_/julia)  
 Julia [language](https://julialang.org)
 
 ## Jupyter Docker Stacks
