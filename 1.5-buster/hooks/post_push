@@ -4,5 +4,5 @@ docker images
 
 if [ "$DOCKER_TAG" = "1.5-buster" ]; then
     echo IMAGE_NAME = "$IMAGE_NAME"
-    docker tag "$IMAGE_NAME" index.docker.io/statisticalmice/julia-jupyter:latest
+    docker push index.docker.io/statisticalmice/julia-jupyter:latest
 fi
