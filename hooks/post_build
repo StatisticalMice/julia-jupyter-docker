@@ -1,5 +1,16 @@
 #!/bin/bash
 
+echo Post build hook
+echo "$DOCKER_REPO"
+echo "$DOCKER_TAG"
+echo "$IMAGE_NAME"
+
 if [ "$IMAGE_NAME" = "statisticalmice/julia-jupyter:1.5-buster" ]; then
+    echo A
+    docker tag "$IMAGE_NAME" statisticalmice/julia-jupyter:latest
+fi
+
+if [ "$DOCKER_TAG" = "1.5-buster" ]; then
+    echo B
     docker tag "$IMAGE_NAME" statisticalmice/julia-jupyter:latest
 fi
