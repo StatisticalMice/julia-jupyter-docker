@@ -15,7 +15,6 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 ### Julia 1.6
 
 `statisticalmice/julia-jupyter:1.6-buster`
-Please note that Julia 1.6 is not yet released.
 
 ### Layers
 
@@ -26,6 +25,13 @@ Please note that Julia 1.6 is not yet released.
 5. Install Miniconda3
 6. Install jupyterlab from conda-forge
 7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
+
+Versions on 4 Feb 2021:
+Julia       1.5.3 / 1.6.0-beta1
+Python      3.8.5
+jupyter lab 3.0.7
+conda       4.9.2
+Debian      10.7
 
 ## Base Images
 
