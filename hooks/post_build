@@ -1,5 +1,5 @@
 #!/bin/bash
 
 if [ "$IMAGE_NAME" = "statisticalmice/julia-jupyter:1.5-buster" ]; then
-    docker tag $IMAGE_NAME statisticalmice/julia-jupyter:latest
+    docker tag "$IMAGE_NAME" statisticalmice/julia-jupyter:latest
 fi
