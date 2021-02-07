@@ -5,6 +5,8 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 
 ## Images
 
+Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this is standard functionality.
+
 ### Julia 1.5
 
 `statisticalmice/julia-jupyter:1.5-buster`  
