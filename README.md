@@ -30,9 +30,9 @@ Versions on 9 Feb 2021:
 |        | 1.5-buster | 1.6-buster |
 |---------|-------|-----------|
 | Julia   | 1.5.3 | 1.6.0-rc1 |
-| Python  | N/A   | 3.8.5     |
-| Jupyter | N/A   | 3.0.7     |
-| Conda   | N/A   | 4.9.2     |
+| Python  | 3.8.5   | 3.8.5     |
+| Jupyter | 3.0.7   | 3.0.7     |
+| Conda   | 4.9.2   | 4.9.2     |
 | Debian  | 10.8  | 10.8      |
 
 ## Base Images
