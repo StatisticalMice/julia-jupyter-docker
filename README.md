@@ -20,20 +20,20 @@ Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this 
 
 1. The original Julia images are built on debian:buster-slim
 2. These images are built on julia:1.5-buster or julia:1.6-buster
-3. Install wget
-4. Create user 'arthur'
-5. Install Miniconda3
-6. Install jupyterlab from conda-forge
-7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
+3. Create user 'arthur'
+4. Install Miniconda3
+5. Install jupyterlab from conda-forge
+6. Install IJulia using Julia, which configures the Julia kernel to Jupyter
 
 Versions on 9 Feb 2021:  
 
-| 1.5.3 | 1.6.0-rc1 |
-|-------|-----------|
-| 3.8.5 | same      |
-| 3.0.7 | same      |
-| 4.9.2 | same      |
-| 10.8  | same      |
+|        | 1.5-buster | 1.6-buster |
+|---------|-------|-----------|
+| Julia   | 1.5.3 | 1.6.0-rc1 |
+| Python  | N/A   | 3.8.5     |
+| Jupyter | N/A   | 3.0.7     |
+| Conda   | N/A   | 4.9.2     |
+| Debian  | 10.8  | 10.8      |
 
 ## Base Images
 
