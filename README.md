@@ -27,12 +27,13 @@ Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this 
 
 Versions on 9 Feb 2021:  
 
-|         | 1.5.3 | 1.6.0-rc1 |
+|        | 1.5-buster | 1.6-buster |
 |---------|-------|-----------|
-| Python  | 3.8.5 | same      |
-| Jupyter | 3.0.7 | same      |
-| Conda   | 4.9.2 | same      |
-| Debian  | 10.8  | same      |
+| Julia   | 1.5.3 | 1.6.0-rc1 |
+| Python  | N/A   | 3.8.5     |
+| Jupyter | N/A   | 3.0.7     |
+| Conda   | N/A   | 4.9.2     |
+| Debian  | 10.8  | 10.8      |
 
 ## Base Images
 
