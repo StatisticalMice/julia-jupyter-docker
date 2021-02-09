@@ -33,7 +33,7 @@ Versions on 9 Feb 2021:
 | 3.8.5 | same      |
 | 3.0.7 | same      |
 | 4.9.2 | same      |
-| 10.7  | same      |
+| 10.8  | same      |
 
 ## Base Images
 
