@@ -26,12 +26,14 @@ Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this 
 6. Install jupyterlab from conda-forge
 7. Install IJulia using Julia, which configures the Julia kernel to Jupyter
 
-Versions on 4 Feb 2021:  
-Julia       1.5.3 / 1.6.0-beta1  
-Python      3.8.5  
-jupyter lab 3.0.7  
-conda       4.9.2  
-Debian      10.7  
+Versions on 9 Feb 2021:  
+
+| 1.5.3 | 1.6.0-rc1 |
+|-------|-----------|
+| 3.8.5 | 3.8.5     |
+| 3.0.7 | 3.0.7     |
+| 4.9.2 | 4.9.2     |
+| 10.7  | 10.8      |
 
 ## Base Images
 
