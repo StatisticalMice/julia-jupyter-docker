@@ -5,18 +5,17 @@ RUN useradd -ms /bin/bash arthur
 
 USER arthur
 WORKDIR /home/arthur
-ENV PATH="/home/arthur/miniconda3/bin:${PATH}"
+ENV PATH="/home/arthur/mambaforge/bin:${PATH}"
 
 RUN set -eux; \
-    curl --output Miniconda3-latest-Linux-x86_64.sh \
-    https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-    && mkdir /home/arthur/.conda \
-    && bash Miniconda3-latest-Linux-x86_64.sh -b \
-    && rm -f Miniconda3-latest-Linux-x86_64.sh 
+    curl -LJO --output Mambaforge-Linux-x86_64.sh \
+    https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh \
+    && bash Mambaforge-Linux-x86_64.sh -b \
+    && rm -f Mambaforge-Linux-x86_64.sh 
 
 RUN set -eux; \
-    conda install -c conda-forge -y jupyterlab \
-    && conda clean --all -f -y
+    mamba install -y jupyterlab \
+    && mamba clean --all -f -y
 
 RUN julia -e "using Pkg; Pkg.add(\"IJulia\"); Pkg.precompile();"
 
