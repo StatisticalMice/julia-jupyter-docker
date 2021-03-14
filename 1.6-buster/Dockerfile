@@ -4,7 +4,7 @@ USER root
 
 RUN set -eux; \
     apt-get update && \
-    apt-get install --no-install-recommends -y nano less && \
+    apt-get install --no-install-recommends -y nano/stable less/stable && \
     rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash arthur

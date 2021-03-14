@@ -11,4 +11,4 @@ RUN set -eux; \
 USER arthur
 WORKDIR /home/arthur
 
-CMD bash
+CMD ["bash"]
