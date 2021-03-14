@@ -30,10 +30,17 @@ Versions on 9 Feb 2021:
 |        | 1.5-buster | 1.6-buster |
 |---------|-------|-----------|
 | Julia   | 1.5.3 | 1.6.0-rc1 |
-| Python  | 3.8.6   | 3.8.6     |
-| Jupyter | 3.0.7   | 3.0.7     |
+| Python  | 3.8.8   | 3.8.8     |
+| Jupyter | 3.0.10   | 3.0.10     |
 | Conda/Mamba   | 4.9.2   | 4.9.2     |
 | Debian  | 10.8  | 10.8      |
+| Glances | Glances v3.1.6.2 | Glances v3.1.6.2|
+
+In addition 1.6-buster-max has:
+
+|        | 1.6-buster-max |
+|---------|-------|
+| rr   |  5.4.0 |
 
 ## Julia 1.6 'max'
 
