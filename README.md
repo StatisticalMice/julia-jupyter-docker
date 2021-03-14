@@ -5,8 +5,6 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 
 ## Images
 
-Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this is standard functionality.
-
 ### Julia 1.5
 
 `statisticalmice/julia-jupyter:1.5-buster`  
@@ -22,10 +20,11 @@ Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this 
 2. These images are built on julia:1.5-buster or julia:1.6-buster
 3. Create user 'arthur'
 4. Install Mambaforge
-5. Install jupyterlab from conda-forge
-6. Install IJulia using Julia, which configures the Julia kernel to Jupyter
+5. Install jupyterlab and jupyter-server-proxy from conda-forge
+6. Install IJulia and Pluto
+7. Install glances, which is a server monitoring tool with a web interface
 
-Versions on 9 Feb 2021:  
+Versions on 14 March 2021:  
 
 |        | 1.5-buster | 1.6-buster |
 |---------|-------|-----------|
@@ -33,20 +32,33 @@ Versions on 9 Feb 2021:
 | Python  | 3.8.8   | 3.8.8     |
 | Jupyter | 3.0.10   | 3.0.10     |
 | Conda/Mamba   | 4.9.2   | 4.9.2     |
-| Debian  | 10.8  | 10.8      |
 | Glances | Glances v3.1.6.2 | Glances v3.1.6.2|
+| Debian  | 10.8  | 10.8      |
 
-In addition 1.6-buster-max has:
+Other software installed include bottle, nodejs, less, nano, curl.
 
-|        | 1.6-buster-max |
-|---------|-------|
-| rr   |  5.4.0 |
+## Using
 
-## Julia 1.6 'max'
+### Running Containers Locally
 
-`statisticalmice/julia-jupyter:1.6-buster-max`
+Example invocation:  
+docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster
 
-This is currently a more 'manual' image with more tools. Example commands you can run include:
+Attaching a host volume to the container:
+-v /host/path/to/workspace:/home/arthur/workspace
+
+Setting the Jupyter authentication token:  
+-e JUPYTER_TOKEN=my-secret-password
+
+If you want to start a bash shell inside the container instead of Jupyter, add 'bash' without quotes to the command line.
+
+### Jupyter
+
+1.5 and 1.6 start Jupyter automatically. Python and Julia kernels are available in Jupyter. Pluto and glances are available and are proxied by Jupyter.
+
+Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this is standard functionality. This is mostly needed if you run the container in a cloud.
+
+From the command line you can run:
 
 jupyter lab --ip 0.0.0.0 --port 8888 
 
