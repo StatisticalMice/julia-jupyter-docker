@@ -5,7 +5,7 @@ WORKDIR /tmp
 
 RUN set -eux; \
     curl -LJO --output rr-5.4.0-Linux-$(uname -m).deb \
-    https://github.com/rr-debugger/rr/releases/download/5.4.0/rr-5.4.0-Linux-$(uname -m).deb \
+    "https://github.com/rr-debugger/rr/releases/download/5.4.0/rr-5.4.0-Linux-$(uname -m).deb" \
     && dpkg -i rr-5.4.0-Linux-$(uname -m).deb
 
 USER arthur
