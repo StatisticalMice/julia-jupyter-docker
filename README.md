@@ -35,6 +35,16 @@ Versions on 9 Feb 2021:
 | Conda/Mamba   | 4.9.2   | 4.9.2     |
 | Debian  | 10.8  | 10.8      |
 
+## Julia 1.6 'max'
+
+`statisticalmice/julia-jupyter:1.6-buster-max`
+
+This is currently a more 'manual' image with more tools. Example commands you can run include:
+
+jupyter lab --ip 0.0.0.0 --port 8888 
+
+julia -e "using Pluto; Pluto.run(host=\"0.0.0.0\", port=8888, launch_browser=false, require_secret_for_open_links=false, require_secret_for_access=false)"
+
 ## Base Images
 
 Julia [Docker official images](https://hub.docker.com/_/julia)  
