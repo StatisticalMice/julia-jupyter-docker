@@ -76,17 +76,25 @@ Click to open a Python notebook, a Glances monitoring tool (in a new browser tab
 ![notebook launcher image](launcher.png "Launcher")
 
 
-### Jupyter
+### How to run Pluto directly (without Jupyter)
 
-1.5 and 1.6 start Jupyter automatically. Python and Julia kernels are available in Jupyter. Pluto and glances are available and are proxied by Jupyter.
+Start the container in bash shell by attaching `bash` to the command line as follows.
 
-Setting JUPYTER_TOKEN environment variable sets the token for Jupyter Lab, this is standard functionality. This is mostly needed if you run the container in a cloud.
+```
+docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster bash
+```
 
-From the command line you can run:
+Start Pluto in the bash shell.
 
-jupyter lab --ip 0.0.0.0 --port 8888 
-
+```
 julia -e "using Pluto; Pluto.run(host=\"0.0.0.0\", port=8888, launch_browser=false, require_secret_for_open_links=false, require_secret_for_access=false)"
+```
+
+Open this in a browser.
+
+```
+http://127.0.0.1:8888/
+```
 
 ## Base Images
 
