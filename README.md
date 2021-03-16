@@ -28,7 +28,7 @@ Versions on 14 March 2021:
 
 |        | 1.5-buster | 1.6-buster |
 |---------|-------|-----------|
-| Julia   | 1.5.3 | 1.6.0-rc1 |
+| Julia   | 1.5.4 | 1.6.0-rc2 |
 | Python  | 3.8.8   | 3.8.8     |
 | Jupyter | 3.0.10   | 3.0.10     |
 | Conda/Mamba   | 4.9.2   | 4.9.2     |
