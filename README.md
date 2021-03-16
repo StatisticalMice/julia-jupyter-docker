@@ -112,4 +112,8 @@ These
 
 Jupyter Docker Stacks [documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
 
+## Glances documentation
+
+[Glances](https://glances.readthedocs.io/en/latest/)
+
 [![GitHub Super-Linter](https://github.com/StatisticalMice/julia-jupyter-docker/workflows/Super-Linter/badge.svg)](https://github.com/marketplace/actions/super-linter)
