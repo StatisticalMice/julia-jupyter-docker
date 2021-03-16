@@ -41,16 +41,40 @@ Other software installed include bottle, nodejs, less, nano, curl.
 
 ### Running Containers Locally
 
-Example invocation:  
+Example invocation is the following. `-ti` is required for interactive use. `--rm` removes the container after it exits. `-p 8888:8888` opens the port `8888` on your your computer and connects it to he port `8888` inside the container, which is the port Jupyter by default uses.
+
+```
 docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster
+```
 
-Attaching a host volume to the container:
+Attach a host directory to the container. The container can view and edit files in this directory.
+
+```
 -v /host/path/to/workspace:/home/arthur/workspace
+```
 
-Setting the Jupyter authentication token:  
+Set the Jupyter authentication token (optional).
+
+```
 -e JUPYTER_TOKEN=my-secret-password
+```
 
-If you want to start a bash shell inside the container instead of Jupyter, add 'bash' without quotes to the command line.
+If you set `JUPYTER_TOKEN`, open this link on your browser. Enter your token in the input labelled 'Password or token'.
+
+```
+http://127.0.0.1:8888/lab
+```
+
+If you didn't specify a token, copy&paste the link from the command line output that looks like this.
+
+```
+http://127.0.0.1:8888/lab?token=46303e3c454ec209005852d2e3060c0568ba019d526c09a1
+```
+
+Click to open a Python notebook, a Glances monitoring tool (in a new browser tab), a Julia notebook, or a Pluto notebook (in a new browser tab).
+
+![notebook launcher image](launcher.png "Launcher")
+
 
 ### Jupyter
 
