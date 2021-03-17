@@ -73,8 +73,7 @@ http://127.0.0.1:8888/lab?token=46303e3c454ec209005852d2e3060c0568ba019d526c09a1
 
 Click to open a Python notebook, a Glances monitoring tool (in a new browser tab), a Julia notebook, or a Pluto notebook (in a new browser tab).
 
-![notebook launcher image](launcher.png "Launcher")
-
+![notebook launcher image](https://raw.githubusercontent.com/StatisticalMice/julia-jupyter-docker/main/launcher.png "Launcher")
 
 ### How to run Pluto directly (without Jupyter)
 
