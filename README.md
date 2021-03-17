@@ -94,6 +94,11 @@ Open this in a browser.
 ```text
 http://127.0.0.1:8888/
 ```
+Start jupyter lab in the bash shell.
+
+```text
+jupyter lab --ip 0.0.0.0 --port 8888
+```
 
 ## Base Images
 
