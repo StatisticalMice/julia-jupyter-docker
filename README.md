@@ -43,31 +43,31 @@ Other software installed include bottle, nodejs, less, nano, curl.
 
 Example invocation is the following. `-ti` is required for interactive use. `--rm` removes the container after it exits. `-p 8888:8888` opens the port `8888` on your your computer and connects it to he port `8888` inside the container, which is the port Jupyter by default uses.
 
-```
+```text
 docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster
 ```
 
 Attach a host directory to the container. The container can view and edit files in this directory.
 
-```
+```text
 -v /host/path/to/workspace:/home/arthur/workspace
 ```
 
 Set the Jupyter authentication token (optional).
 
-```
+```text
 -e JUPYTER_TOKEN=my-secret-password
 ```
 
 If you set `JUPYTER_TOKEN`, open this link on your browser. Enter your token in the input labelled 'Password or token'.
 
-```
+```text
 http://127.0.0.1:8888/lab
 ```
 
 If you didn't specify a token, copy&paste the link from the command line output that looks like this.
 
-```
+```text
 http://127.0.0.1:8888/lab?token=46303e3c454ec209005852d2e3060c0568ba019d526c09a1
 ```
 
@@ -80,19 +80,19 @@ Click to open a Python notebook, a Glances monitoring tool (in a new browser tab
 
 Start the container in bash shell by attaching `bash` to the command line as follows.
 
-```
+```text
 docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster bash
 ```
 
 Start Pluto in the bash shell.
 
-```
+```text
 julia -e "using Pluto; Pluto.run(host=\"0.0.0.0\", port=8888, launch_browser=false, require_secret_for_open_links=false, require_secret_for_access=false)"
 ```
 
 Open this in a browser.
 
-```
+```text
 http://127.0.0.1:8888/
 ```
 
