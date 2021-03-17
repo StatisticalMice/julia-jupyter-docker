@@ -14,6 +14,10 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 
 `statisticalmice/julia-jupyter:1.6-buster`
 
+### Julia 1.6 with R
+
+`statisticalmice/julia-jupyter:1.6-R`
+
 ### Layers
 
 1. The original Julia images are built on debian:buster-slim
@@ -36,6 +40,8 @@ Versions on 14 March 2021:
 | Debian  | 10.8  | 10.8      |
 
 Other software installed include bottle, nodejs, less, nano, curl.
+
+Image 1.6-R also contains R, tidyverse, data.table, and the R Jupyter kernel.
 
 ## Using
 
