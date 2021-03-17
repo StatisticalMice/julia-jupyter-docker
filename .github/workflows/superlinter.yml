@@ -23,4 +23,4 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FILTER_REGEX_INCLUDE: .*(1.?-buster|README\.md).*
+          FILTER_REGEX_EXCLUDE: .*(jupyter_notebook_config\.py).*
