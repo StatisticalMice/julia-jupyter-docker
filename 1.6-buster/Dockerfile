@@ -28,6 +28,12 @@ COPY --chown=arthur:arthur jupyter_notebook_config.py /home/arthur/mambaforge/et
 
 RUN julia -e "using Pkg; Pkg.add([\"IJulia\",\"Pluto\"]); Pkg.precompile();"
 
+# These notebooks can be used to test that the image works
+COPY --chown=arthur:arthur julia-test.ipynb .
+RUN chmod a+w julia-test.ipynb
+COPY --chown=arthur:arthur python-test.ipynb .
+RUN chmod a+w python-test.ipynb
+
 # Jupyter:
 # Setting JUPYTER_TOKEN environment variable sets the token
 EXPOSE 8888/tcp
