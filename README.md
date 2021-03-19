@@ -32,9 +32,9 @@ Versions on 14 March 2021:
 
 |        | 1.5-buster | 1.6-buster |
 |---------|-------|-----------|
-| Julia   | 1.5.4 | 1.6.0-rc2 |
+| Julia   | 1.5.4 | 1.6.0-rc3 |
 | Python  | 3.8.8   | 3.8.8     |
-| Jupyter | 3.0.10   | 3.0.10     |
+| Jupyter | 3.0.10 (fixed)  | 3.0.10 (fixed)    |
 | Conda/Mamba   | 4.9.2   | 4.9.2     |
 | Glances | Glances v3.1.6.2 | Glances v3.1.6.2|
 | Debian  | 10.8  | 10.8      |
@@ -42,6 +42,8 @@ Versions on 14 March 2021:
 Other software installed include bottle, nodejs, less, nano, curl.
 
 Image 1.6-R also contains R, tidyverse, data.table, and the R Jupyter kernel.
+
+Image 1.6-custom is meant for experimentation and as an example of further use, not for distribution on dockerhub.
 
 ## Using
 

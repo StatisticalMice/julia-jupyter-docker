@@ -1,4 +1,4 @@
-FROM statisticalmice/julia-jupyter:1.6-buster
+FROM statisticalmice/julia-jupyter:1.6
 
 USER arthur
 WORKDIR /home/arthur
