@@ -1,13 +1,22 @@
 #!/bin/bash
 
-image=statisticalmice/julia-jupyter:1.6-buster
-echo
-echo $image
-echo 
-docker run -it --rm $image bash -c "julia -version; python --version; jupyter --version | grep lab; conda --version; echo Debian:; cat /etc/debian_version; glances --version"
-echo
+image=statisticalmice/julia-jupyter:1.6
+. version-info-inner.sh
+image=statisticalmice/julia-jupyter:1.6-local
+. version-info-inner.sh
 
-image=statisticalmice/julia-jupyter:1.5-buster
-echo $image
-echo 
-docker run -it --rm $image bash -c "julia -version; python --version; jupyter --version | grep lab; conda --version; echo Debian:; cat /etc/debian_version; glances --version"
+image=statisticalmice/julia-jupyter:1.5
+. version-info-inner.sh
+image=statisticalmice/julia-jupyter:1.5-local
+. version-info-inner.sh
+
+image=statisticalmice/julia-jupyter:latest
+. version-info-inner.sh
+
+image=statisticalmice/julia-jupyter:1.6-R
+. version-info-inner.sh
+image=statisticalmice/julia-jupyter:1.6-R-local
+. version-info-inner.sh
+
+image=statisticalmice/julia-jupyter:1.6-custom
+. version-info-inner.sh
