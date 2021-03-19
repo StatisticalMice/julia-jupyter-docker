@@ -7,16 +7,12 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 
 ### Julia 1.5
 
-`statisticalmice/julia-jupyter:1.5-buster`  
+`statisticalmice/julia-jupyter:1.5`  
 `statisticalmice/julia-jupyter:latest`
 
 ### Julia 1.6
 
-`statisticalmice/julia-jupyter:1.6-buster`
-
-### Julia 1.6 with R
-
-`statisticalmice/julia-jupyter:1.6-R`
+`statisticalmice/julia-jupyter:1.6`
 
 ### Layers
 
@@ -28,9 +24,9 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 6. Install IJulia and Pluto
 7. Install glances, which is a server monitoring tool with a web interface
 
-Versions on 14 March 2021:  
+Versions on 19 March 2021:  
 
-|        | 1.5-buster | 1.6-buster |
+|        | 1.5 | 1.6 |
 |---------|-------|-----------|
 | Julia   | 1.5.4 | 1.6.0-rc3 |
 | Python  | 3.8.8   | 3.8.8     |
@@ -41,10 +37,6 @@ Versions on 14 March 2021:
 
 Other software installed include bottle, nodejs, less, nano, curl.
 
-Image 1.6-R also contains R, tidyverse, data.table, and the R Jupyter kernel.
-
-Image 1.6-custom is meant for experimentation and as an example of further use, not for distribution on dockerhub.
-
 ## Using
 
 ### Running Containers Locally
@@ -52,7 +44,7 @@ Image 1.6-custom is meant for experimentation and as an example of further use, 
 Example invocation is the following. `-ti` is required for interactive use. `--rm` removes the container after it exits. `-p 8888:8888` opens the port `8888` on your your computer and connects it to he port `8888` inside the container, which is the port Jupyter by default uses.
 
 ```text
-docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster
+docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6
 ```
 
 Attach a host directory to the container. The container can view and edit files in this directory.
@@ -88,7 +80,7 @@ Click to open a Python notebook, a Glances monitoring tool (in a new browser tab
 Start the container in bash shell by attaching `bash` to the command line as follows.
 
 ```text
-docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6-buster bash
+docker run -ti --rm -p 8888:8888 statisticalmice/julia-jupyter:1.6 bash
 ```
 
 Start Pluto in the bash shell.
