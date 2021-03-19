@@ -20,7 +20,7 @@ RUN set -eux; \
     && rm -f Mambaforge-Linux-x86_64.sh 
 
 RUN set -eux; \
-    mamba install -y jupyterlab bottle glances jupyter-server-proxy nodejs \
+    mamba install -y jupyterlab=3.0.10 bottle glances jupyter-server-proxy nodejs \
     && mamba clean --all -f -y
 
 RUN jupyter labextension install @jupyterlab/server-proxy
