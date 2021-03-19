@@ -2,7 +2,7 @@
 
 docker images
 
-if [ "$DOCKER_TAG" = "1.5-buster" ]; then
+if [ "$DOCKER_TAG" = "1.5" ]; then
     echo IMAGE_NAME = "$IMAGE_NAME"
     docker push index.docker.io/statisticalmice/julia-jupyter:latest
 fi
