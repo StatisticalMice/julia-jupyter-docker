@@ -26,7 +26,8 @@ RUN set -eux; \
 RUN jupyter labextension install @jupyterlab/server-proxy
 COPY --chown=arthur:arthur jupyter_notebook_config.py /home/arthur/mambaforge/etc/jupyter
 
-RUN julia -e "using Pkg; Pkg.add([\"IJulia\",\"Pluto\"]); Pkg.precompile();"
+ENV PYTHON=/home/arthur/mambaforge/bin/python
+RUN julia -e "using Pkg; Pkg.add([\"IJulia\",\"Pluto\",\"PyCall\"]); Pkg.build(\"PyCall\"); Pkg.precompile();"
 
 # These notebooks can be used to test that the image works
 COPY --chown=arthur:arthur julia-test.ipynb .
