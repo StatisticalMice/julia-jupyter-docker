@@ -8,11 +8,11 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 ### Julia 1.5
 
 `statisticalmice/julia-jupyter:1.5`  
-`statisticalmice/julia-jupyter:latest`
 
 ### Julia 1.6
 
 `statisticalmice/julia-jupyter:1.6`
+`statisticalmice/julia-jupyter:latest`
 
 ### Layers
 
@@ -24,13 +24,13 @@ GitHub [statisticalmice/julia-jupyter-docker](https://github.com/StatisticalMice
 6. Install IJulia and Pluto
 7. Install glances, which is a server monitoring tool with a web interface
 
-Versions on 19 March 2021:  
+Versions on 27 March 2021:  
 
 |        | 1.5 | 1.6 |
 |---------|-------|-----------|
-| Julia   | 1.5.4 | 1.6.0-rc3 |
+| Julia   | 1.5.4 | 1.6.0 |
 | Python  | 3.8.8   | 3.8.8     |
-| Jupyter | 3.0.10 (fixed)  | 3.0.10 (fixed)    |
+| Jupyter | 3.0.12  | 3.0.12    |
 | Conda/Mamba   | 4.9.2   | 4.9.2     |
 | Glances | Glances v3.1.6.2 | Glances v3.1.6.2|
 | Debian  | 10.8  | 10.8      |
